@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spn_routes">
+        <item>四平校区 至 嘉定校区</item>
+        <item>嘉定校区 至 四平校区</item>
+        <item>沪西校区 至 嘉定校区</item>
+        <item>嘉定校区 至 沪西校区</item>
+        <item>同济北苑 至 嘉定校区</item>
+        <item>嘉定校区 至 同济北苑</item>
+        <item>曹杨八村 至 嘉定校区</item>
+        <item>嘉定校区 至 曹杨八村</item>
+    </string-array>
+</resources>
