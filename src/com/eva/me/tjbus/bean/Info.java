@@ -8,7 +8,7 @@ import java.io.Serializable;
  *
  */
 public class Info implements Serializable {
-
+	
 	private String order;
 
 	private String name;
@@ -16,27 +16,50 @@ public class Info implements Serializable {
 	
 	private String time;
 
-	private String pathBgn;
-	private String pathDes;
-
-	private String routes;
+	private String path;
+	
+	private String routesBgn;
+	private String routesDes;
 	
 	private int imgResID;
 
 	
-	public Info(String order, String name, String no, String time,
-			String pathBgn, String pathDes, String routes, int imgResID) {
+	public Info(String order, String name, String no, String time, String path,
+			String routesBgn, String routesDes, int imgResID) {
 		super();
 		this.order = order;
 		this.name = name;
 		this.no = no;
 		this.time = time;
-		this.pathBgn = pathBgn;
-		this.pathDes = pathDes;
-		this.routes = routes;
+		this.path = path;
+		this.routesBgn = routesBgn;
+		this.routesDes = routesDes;
 		this.imgResID = imgResID;
 	}
+	
+	public String getPath() {
+		return path;
+	}
 
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public String getRoutesBgn() {
+		return routesBgn;
+	}
+
+	public void setRoutesBgn(String routesBgn) {
+		this.routesBgn = routesBgn;
+	}
+
+	public String getRoutesDes() {
+		return routesDes;
+	}
+
+	public void setRoutesDes(String routesDes) {
+		this.routesDes = routesDes;
+	}
 
 	public String getOrder() {
 		return order;
@@ -68,30 +91,6 @@ public class Info implements Serializable {
 
 	public void setTime(String time) {
 		this.time = time;
-	}
-
-	public String getPathBgn() {
-		return pathBgn;
-	}
-
-	public void setPathBgn(String pathBgn) {
-		this.pathBgn = pathBgn;
-	}
-
-	public String getPathDes() {
-		return pathDes;
-	}
-
-	public void setPathDes(String pathDes) {
-		this.pathDes = pathDes;
-	}
-
-	public String getRoutes() {
-		return routes;
-	}
-
-	public void setRoutes(String routes) {
-		this.routes = routes;
 	}
 
 	public int getImgResID() {
